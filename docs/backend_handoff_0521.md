@@ -93,12 +93,11 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ## 5) 다음 작업 우선순위
 1. `dashboard.py` 필터 파라미터 정합성 개선
    - `shelf_id`/`status` 파싱 안전화
-2. 작업 완료 API에 감사 로그(누가/언제) 남기기
-3. SQL 분리
+2. SQL 분리
    - raw SQL을 service 계층으로 분리
-4. 응답 스키마 엄격화
+3. 응답 스키마 엄격화
    - `schemas.py`에 endpoint별 response model 추가
-5. 에러 처리 표준화
+4. 에러 처리 표준화
    - not found / invalid query / db error 핸들링
 
 ## 6) 프론트 연동 포인트
