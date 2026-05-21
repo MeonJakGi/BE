@@ -1,0 +1,24 @@
+:root {
+  --font-ko: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-en: 'Elms Sans', 'Inter', system-ui, sans-serif;
+
+  --brand-primary: #4a9ce8;
+  --bg-page: #f2f4f8;
+  --bg-surface: #ffffff;
+  --line-default: #d9e2ec;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+
+  --status-normal-bg: #eef5ff;
+  --status-normal-fg: #2f7fd8;
+  --status-replenish-bg: #fdeaea;
+  --status-replenish-fg: #c24141;
+  --status-check-bg: #f8e7a8;
+  --status-check-fg: #6b5a00;
+  --status-order-bg: #ffe4e4;
+  --status-order-fg: #b42318;
+
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}

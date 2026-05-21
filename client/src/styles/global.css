@@ -1,0 +1,73 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; padding: 0; width: 100%; min-height: 100%; }
+body {
+  font-family: var(--font-ko);
+  color: var(--text-primary);
+  background: var(--bg-page);
+}
+
+.app-shell { min-height: 100vh; }
+.topbar {
+  height: 60px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--line-default);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.brand { font-family: var(--font-en); font-size: 32px; font-weight: 700; }
+.tabs { display: flex; gap: 24px; }
+.tab {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  border-bottom: 3px solid transparent;
+  padding: 14px 8px;
+  cursor: pointer;
+}
+.tab.active { color: var(--text-primary); border-color: var(--brand-primary); }
+
+.page { padding: 16px; }
+.card-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--line-default);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+
+.table-wrap {
+  margin-top: 16px;
+  background: var(--bg-surface);
+  border: 2px solid #8bc3f5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.table-scroll { max-height: 420px; overflow-y: auto; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 12px; border-bottom: 1px solid #edf2f7; font-size: 14px; }
+.table th { position: sticky; top: 0; background: #f7fafd; z-index: 1; }
+
+.badge { border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 600; }
+.badge.normal { background: var(--status-normal-bg); color: var(--status-normal-fg); }
+.badge.replenish { background: var(--status-replenish-bg); color: var(--status-replenish-fg); }
+.badge.check { background: var(--status-check-bg); color: var(--status-check-fg); }
+.badge.order { background: var(--status-order-bg); color: var(--status-order-fg); }
+
+.modal-scrim {
+  position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal {
+  width: min(700px, 90vw); background: var(--bg-surface);
+  border: 2px solid #7cb8f0; border-radius: 20px; padding: 20px;
+}
+
+.notify-drawer {
+  position: fixed; top: 60px; right: 0; width: 340px; bottom: 0;
+  border-left: 1px solid var(--line-default);
+  background: var(--bg-surface); padding: 12px;
+}
