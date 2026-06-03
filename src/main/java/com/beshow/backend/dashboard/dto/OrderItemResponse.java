@@ -15,6 +15,7 @@ public record OrderItemResponse(
         Integer recommendedOrderQuantity,
         Integer leadTimeDays,
         String statusReason,
-        String productImageUrl
+        String productImageUrl,
+        String category
 ) {
 }
