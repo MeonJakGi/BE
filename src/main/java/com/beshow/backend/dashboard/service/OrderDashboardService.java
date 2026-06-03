@@ -127,7 +127,8 @@ public class OrderDashboardService {
                 valueOrZero(inventory.getRecommendedOrderQuantity()),
                 inventory.getLeadTimeDays(),
                 createOrderReasonSummary(totalQuantity, reorderPoint),
-                s3UrlService.createProductImageUrl(product.getProductImageUrl())
+                s3UrlService.createProductImageUrl(product.getProductImageUrl()),
+                product.getCategory() == null ? "미분류" : product.getCategory()
         );
     }
 
